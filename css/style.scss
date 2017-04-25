@@ -77,14 +77,15 @@
     	color:#9c9c9f;
     	display:inline-block;
     	font-family: Robor;
-    	margin-top:-10px;
+    	
     	font-size:1rem;
     }
     .content{
     	color:#9c9c9f;
+    	margin-top:20px;
     	display:inline-block;
     	font-family: Robol;
-    	font-size:0.8rem;
+    	font-size:0.9rem;
     	text-align: center;
     	width:90%;
     	margin-left:5%
@@ -98,6 +99,10 @@
     	background-size:cover;
     	background-repeat: no-repeat; 
 		background-position: -15%;
+    }
+    .icon{
+    	font-size: 2rem;
+    	color:white;
     }
 }
 
@@ -113,7 +118,7 @@
 	width:100%;
 	display:flex;
 	background-color:red;
-	height:13%;
+	height:10%;
 	align-items:center;
 	z-index:99;
 
