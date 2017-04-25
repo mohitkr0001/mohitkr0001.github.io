@@ -1,3 +1,12 @@
+@font-face {
+  font-family: Robol;
+  src: url("../fonts/Roboto-Light.ttf"); }
+@font-face {
+  font-family: Robor;
+  src: url("../fonts/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: Robot;
+  src: url("../fonts/Roboto-Thin.ttf"); }
 .main {
   background-color: #fff;
   height: 100vh;
@@ -34,28 +43,31 @@
     flex-flow: column;
     height: 100%; }
 
-  .background-img {
-    height: 100%; }
-
   .small-12-top {
     height: 50%;
     position: relative; }
 
-  .circle {
-    border: 2px solid rgba(0, 56, 56, 0.6);
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background: url(../img/profile.png);
-    background-size: cover;
-    background-repeat: no-repeat; }
+  .textarea {
+    text-align: center; }
 
   .textarea h4 {
-    color: #eee; } }
+    display: inline-block;
+    color: #9c9c9c;
+    font-family: 'Robor';
+    font-size: 1.5rem;
+    margin-bottom: -20px; }
+
+  .textarea p {
+    color: #9c9c9f;
+    display: inline-block;
+    font-family: Robor;
+    font-size: 1rem; }
+
+  .small-12-top {
+    background-image: url("../img/dp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -15%; } }
 .skills {
   position: relative; }
 
