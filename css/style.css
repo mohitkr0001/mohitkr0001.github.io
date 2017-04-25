@@ -55,13 +55,23 @@
     color: #9c9c9c;
     font-family: 'Robor';
     font-size: 1.5rem;
-    margin-bottom: -20px; }
+    margin-bottom: -30px; }
 
-  .textarea p {
+  .sub-heading {
     color: #9c9c9f;
     display: inline-block;
     font-family: Robor;
+    margin-top: -10px;
     font-size: 1rem; }
+
+  .content {
+    color: #9c9c9f;
+    display: inline-block;
+    font-family: Robol;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%; }
 
   .small-12-top {
     background-image: url("../img/dp.png");
