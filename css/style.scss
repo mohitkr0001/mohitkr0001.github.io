@@ -1,147 +1,137 @@
 @font-face {
-    font-family: Robol;
-    src: url("../fonts/Roboto-Light.ttf");
+    font-family: RobotoL;
+    src: url(../fonts/Roboto-Light.ttf);
 }
 @font-face {
-    font-family: Robor;
-    src: url("../fonts/Roboto-Regular.ttf");
+    font-family: RobotoR;
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face {
-    font-family: Robot;
-    src: url("../fonts/Roboto-Thin.ttf");
+    font-family: RobotoT;
+    src: url(../fonts/Roboto-Thin.ttf);
 }
-.main{
-	background-color: #fff;
-	height:100vh;
-	position:relative;
-}
-.black{
-	background-image: 
-    repeating-linear-gradient(
-      -45deg,
-      black,
-      black 3px,
-      #101010 7px,
-      #eee 4px /* determines size */
-    );
-	height:100vh;
-	color:white;
-	box-shadow:2px 3px 10px rgba(0,0,0,0.5);
-	
-}
-.white{
-	background-color:white;
-	height:100vh;
-	z-index:-1;
-}
-.middle{
-	position:absolute;
-	background-color:#fff;
-	left:50%;
-	top:50%;
-	transform:translate(-50%,-50%);
-	width:70%;
-	height:70%;
-	box-shadow: 2px 6px 10px rgba(0,0,0,0.5)
-}
-
-
-@media only screen and (max-width:500px) {
-    .middle{
-        width:100vw;
-        height:100vh;
-    }
-    .main-items{
-    	display:flex;
-    	flex-flow: column;
-  		height: 100%;
-    }
-   
-    .small-12-top{
-    	height:50%;
-    	position:relative;
-    }
-
-   .textarea{
-	text-align: center;
-   }
-    
-    .textarea h4{
-    	display:inline-block;
-    	color:#9c9c9c;
-    	margin-top:10px;
-    	font-family: 'Robor';
-    	font-size:1.5rem;
-    	margin-bottom: -30px;
-    }
-    .sub-heading{
-    	color:#9c9c9f;
-    	display:inline-block;
-    	font-family: Robor;
-    	
-    	font-size:1rem;
-    }
-    .content{
-    	color:#9c9c9f;
-    	margin-top:20px;
-    	display:inline-block;
-    	font-family: Robol;
-    	font-size:0.9rem;
-    	text-align: center;
-    	width:90%;
-    	margin-left:5%
-
-
-    }
-
-    .small-12-top{
-    	background-image:url("../img/dp.png");
-    	
-    	background-size:cover;
-    	background-repeat: no-repeat; 
-		background-position: -15%;
-    }
-    a .icon{
-    	font-size: 2rem;
-    	color:white;
-    }
-    a .icon:hover{
-		color:#2ec66e;
-    	animation:rot 1s ease-in-out forward;
-    }
-    @keyframes rot{
-    	0%{
-    		transform:rotate(0deg);
-    	}
-    	50%{
-    		transform:scale(1.5,1.5);
-    	}
-    	100%{
-    		transform:rotate(360deg);
-    	}
-    }
-}
-
-
-
-
-.skills{
-	position:relative;
-}
-.footer{
-	position:absolute;
-	bottom:0px;
-	width:100%;
-	display:flex;
-	background-color:#2ec692;
-	height:10%;
-	align-items:center;
-	z-index:99;
+.full{
+  height:100vh;
+  background-color: #eee;
 
 }
+.main-card{
+
+  height:100%;
+  margin:0px !important;
+  padding:0px !important;
+  overflow: hidden;
+
+}
+.center-card{
+  height:50%;
+  background-color: white;
+  top:50px;
+}
+
+.left-card{
+  overflow: hidden;
+}
+ img{
+   height: auto;
+ }
+
+.right-card{
+  height:100%;
+  text-align: center;
+}
+.package p{
+  font-family: RobotoL;
+
+}
+
 .inner-footer{
-	display:flex;
-	width:100%;
-	justify-content:space-around;
+padding: 20px;
+height:20px;
+margin-top:5vh
+}
+.inner-footer a{
+  padding:0vw 0.5vw 0vw 0.5vw;
+
+}
+.inner-footer a i{
+  font-size: 2em;
+  color:rgb(60, 230, 153);
+
+}
+
+@media only screen and (min-width: 500px){
+.center-card{
+  margin-top:10%;
+  border-radius: 10px;
+  border:solid rgb(60, 230, 153) 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main-card{
+  border-radius: 10px;
+}
+.package h4{
+  margin-top:30px;
+  font-size: 2.5vw;
+  font-family: RobotoR;
+  color:rgb(60, 230, 153);
+}
+.package .sub-heading{
+  font-family: RobotoR;
+  font-size:1.2vw;
+  margin-top: 20px;
+  color:rgb(182, 181, 181);
+
+}
+.package .content{
+  margin-top: 20px;
+  padding: 0px 10px 0px 10px;
+  font-size:1vw;
+  color: rgb(164, 164, 164);
+}
+
+}
+
+@media only screen and (max-width: 500px){
+  .main-card{
+    height:100%;
+  }
+  .center-card{
+    height:100% !important;
+  }
+  .left-card{
+    height:65%;
+  }
+  img{
+    width:100%;
+  }
+  .package h4{
+    margin-top:3px;
+    font-size: 6vh;
+    font-family: RobotoR;
+    color:rgb(60, 230, 153);
+  }
+  .package .sub-heading{
+    margin-bottom: 3px;
+    font-family: RobotoR;
+    font-size:3vh;
+    margin-top:3px;
+    color:rgb(182, 181, 181);
+
+  }
+  .package .content{
+    margin-top:5px;
+    padding: 0px 15px 0px 15px;
+    font-size:2.5vh;
+    color: rgb(164, 164, 164);
+  }
+  .inner-footer{
+    margin-top:-30px;
+  }
+  .inner-footer a i{
+    font-size: 2em;
+    color:rgb(60, 230, 153);
+    padding:0px 10px 0px 10px;
+  }
 
 }
