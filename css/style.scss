@@ -13,6 +13,8 @@
 .full{
   height:100vh;
   background-color: #eee;
+  background-image: url('../img/background.png');
+  background-size: cover;
 
 }
 .main-card{
@@ -61,10 +63,6 @@ margin-top:5vh
 }
 
 @media only screen and (min-width: 500px){
-  .full{
-    background-image: url('../img/background.png');
-    background-size: cover;
-  }
 .center-card{
   margin-top:10%;
   border-radius: 10px;
@@ -93,6 +91,7 @@ margin-top:5vh
   font-size:1vw;
   color: rgb(164, 164, 164);
 }
+
 
 }
 

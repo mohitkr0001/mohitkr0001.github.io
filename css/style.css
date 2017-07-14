@@ -9,7 +9,9 @@
   src: url(../fonts/Roboto-Thin.ttf); }
 .full {
   height: 100vh;
-  background-color: #eee; }
+  background-color: #eee;
+  background-image: url("../img/background.png");
+  background-size: cover; }
 
 .main-card {
   height: 100%;
@@ -48,10 +50,6 @@ img {
   color: #3ce699; }
 
 @media only screen and (min-width: 500px) {
-  .full {
-    background-image: url("../img/background.png");
-    background-size: cover; }
-
   .center-card {
     margin-top: 10%;
     border-radius: 10px;
