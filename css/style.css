@@ -1,79 +1,120 @@
-.main {
-  background-color: #fff;
+@font-face {
+  font-family: RobotoL;
+  src: url(../fonts/Roboto-Light.ttf); }
+@font-face {
+  font-family: RobotoR;
+  src: url(../fonts/Roboto-Regular.ttf); }
+@font-face {
+  font-family: RobotoT;
+  src: url(../fonts/Roboto-Thin.ttf); }
+.full {
   height: 100vh;
-  position: relative; }
+  background-color: #eee;
+  background-image: url("../img/background.png");
+  background-size: cover; }
 
-.black {
-  background-image: repeating-linear-gradient(-45deg, black, black 3px, #101010 7px, #eee 4px);
-  height: 100vh;
-  color: white;
-  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5); }
-
-.white {
-  background-color: white;
-  height: 100vh;
-  z-index: -1; }
-
-.middle {
-  position: absolute;
-  background-color: #fff;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  height: 70%;
-  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.5); }
-
-@media only screen and (max-width: 500px) {
-  .middle {
-    width: 100vw;
-    height: 100vh; }
-
-  .main-items {
-    display: flex;
-    flex-flow: column;
-    height: 100%; }
-
-  .background-img {
-    height: 100%; }
-
-  .small-12-top {
-    height: 50%;
-    position: relative; }
-
-  .circle {
-    border: 2px solid rgba(0, 56, 56, 0.6);
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background: url(../img/profile.png);
-    background-size: cover;
-    background-repeat: no-repeat; } }
-.skills {
-  position: relative; }
-
-.footer {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  display: flex;
-  background-color: red;
-  height: 13%;
-  align-items: center;
-  z-index: 99; }
-
-.list {
-  width: 3rem;
-  height: 3rem;
+.main-card {
+  height: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
   overflow: hidden; }
 
+.center-card {
+  height: 50%;
+  background-color: white;
+  top: 50px; }
+
+.left-card {
+  overflow: hidden; }
+
+img {
+  height: auto; }
+
+.right-card {
+  height: 100%;
+  text-align: center; }
+
+.package p {
+  font-family: RobotoL; }
+
 .inner-footer {
-  display: flex;
-  width: 100%;
-  justify-content: space-around; }
+  padding: 20px;
+  height: 20px;
+  margin-top: 5vh; }
+
+.inner-footer a {
+  padding: 0vw 0.5vw 0vw 0.5vw; }
+
+.inner-footer a i {
+  font-size: 2em;
+  color: #3ce699; }
+
+@media only screen and (min-width: 500px) {
+  .center-card {
+    margin-top: 10%;
+    border-radius: 10px;
+    border: solid #3ce699 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+  .main-card {
+    border-radius: 10px; }
+
+  .package h4 {
+    margin-top: 30px;
+    font-size: 2.5vw;
+    font-family: RobotoR;
+    color: #3ce699; }
+
+  .package .sub-heading {
+    font-family: RobotoR;
+    font-size: 1.2vw;
+    margin-top: 20px;
+    color: #b6b5b5; }
+
+  .package .content {
+    margin-top: 20px;
+    padding: 0px 10px 0px 10px;
+    font-size: 1vw;
+    color: #a4a4a4; } }
+@media only screen and (max-width: 500px) {
+  .main-card {
+    height: 100%; }
+
+  .center-card {
+    height: 100% !important; }
+
+  .left-card {
+    height: 55%; }
+
+  img {
+    width: 100%; }
+
+  .package h4 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 6vh;
+    font-family: RobotoR;
+    color: #3ce699; }
+
+  .package .sub-heading {
+    margin-bottom: 7px;
+    font-family: RobotoR;
+    font-size: 3.2vh;
+    margin-top: 3px;
+    color: #b6b5b5; }
+
+  .package .content {
+    margin-top: 2px;
+    padding: 0px 10px 0px 10px;
+    font-size: 2.5vh;
+    color: #a4a4a4; }
+
+  .inner-footer {
+    margin-top: -30px; }
+
+  .inner-footer a i {
+    font-size: 2.5em;
+    color: #3ce699;
+    padding: 0px 10px 0px 10px; } }
 
 /*# sourceMappingURL=style.css.map */
