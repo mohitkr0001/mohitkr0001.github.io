@@ -1,0 +1,52 @@
+body {
+  color: #333;
+  font-family: "Quicksand", "Josefin Slab", serif;
+  text-align: center; }
+
+.profile-image {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/mohit-desktop.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.name {
+  font-family: "Josefin Slab";
+  font-size: 34px; }
+
+.sub-heading {
+  font-family: "Quicksand";
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 0.9rem; }
+
+.content {
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-size: 1rem; }
+
+.wink {
+  color: #f33e3e; }
+
+.links img {
+  height: 25px;
+  width: 25px;
+  margin: 0px 5px;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s; }
+  .links img:hover {
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+    -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
+
+.links a:hover {
+  text-decoration: none; }
+
+@media only screen and (max-width: 500px) {
+  .profile-image {
+    height: 60vh; } }
